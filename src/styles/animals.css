@@ -8,3 +8,17 @@ ul {
 figure {
   margin: 0;
 }
+
+figure img {
+  border: thick solid transparent;
+}
+
+figure a:link,
+figure a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+figure .active img {
+  border: thick solid white;
+}

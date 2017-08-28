@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
+import { Route } from 'react-router-dom'
 import Animal from './Animal'
+import Details from './Details'
 
 class Animals extends Component {
   state = {
@@ -13,7 +15,7 @@ class Animals extends Component {
           { id: 1, name: 'Whales', image: 'http://www.whales.org.au/news/images/humpback-s.jpg' },
           {
             id: 2,
-            name: 'Sharks',
+            name: 'Great White Sharks',
             image: 'https://sharkopedia.discovery.com/wp-content/uploads/2015/06/shark-intelligence-2a-550x350.jpg'
           },
           { id: 3, name: 'Porpoise', image: 'http://elelur.com/data_images/mammals/porpoise/porpoise-02.jpg' }
@@ -40,6 +42,8 @@ class Animals extends Component {
         <ul style={{ backgroundColor: 'rgba(1,1,1,0.5)', padding: '1em' }}>
           {this.animals()}
         </ul>
+
+        <Route path="/animals/:slug" component={Details} />
       </section>
     )
   }
