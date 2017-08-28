@@ -8,3 +8,19 @@ body {
   color: white;
   text-align: center;
 }
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav a:link,
+header nav a:visited {
+  color: #beec91;
+}
+
+header nav a.active:link,
+header nav a.active:visited {
+  background-color: #beec91;
+  color: #0b287d;
+}
