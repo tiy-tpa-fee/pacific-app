@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Animal from './Animal'
-import './index.css'
 
 class Animals extends Component {
   state = {
@@ -38,7 +37,7 @@ class Animals extends Component {
       <section>
         <p>Theres are some of the amazing animals in the Pacific Ocean:</p>
 
-        <ul>
+        <ul style={{ backgroundColor: 'rgba(1,1,1,0.5)', padding: '1em' }}>
           {this.animals()}
         </ul>
       </section>
